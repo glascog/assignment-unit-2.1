@@ -24,7 +24,7 @@ let pets = 2;
 // 10 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
 let friendsPets = 3;
 // 11 - Add two pets to your `pets` variable
-friendsPets += 2;
+pets += 2;
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
 const allowedPets = 3;
 // 13 - Create a conditional: if adventurous is true, console log "Adventures are great!", 
@@ -38,7 +38,7 @@ else {
 
 // 14 - Create a compound conditional: if luckyNumber is 2 and adventurous is true,
 // console log "Roll the dice!"
-if ( luckyNumber == 2 && adventurous ){
+if ( luckyNumber === 2 && adventurous ){
     console.log ( 'Roll the dice' );
 }
 // 15 - Write a conditional that console logs "I can have more pets!" 
@@ -46,6 +46,15 @@ if ( luckyNumber == 2 && adventurous ){
 // console logs "I have enough pets" if the value of `pets` is equal to the value of `allowedPets`,
 // and console logs "Oh no, I have too many pets!"
 // if the value of `pets` is greater than the value of `allowedPets`.
+if ( pets < allowedPets ) {
+    console.log ( 'I can have more pets!' );
+}
+else if ( pets === allowedPets ) {
+    console.log( 'I have enough pets' );
+}
+else {
+    console.log ( 'Oh no, I have too many pets!' );
+}//checks number of pets against pets allowed
 
 // STRETCH GOALS:
 
@@ -54,6 +63,7 @@ if ( luckyNumber == 2 && adventurous ){
 // assigns the highest value to `mostPets`. There's several possibilities --
 // be sure to think through all the scenarios. 
 // console.log `mostPets` after the conditional has run.
+let mostPets = 5;
 
 // 17 - Write a *switch* statement that logs:
 //      "First is the worst" if your lucky number is 1
